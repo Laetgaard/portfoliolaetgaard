@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="forside.css">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <!-- ================= NAV ================= -->
+
+    <div class="nav">
+
+        <button class="burger" id="burger">
+            <svg id="svg" viewBox="0 0 100 100">
+
+                <!-- All lines now equal length but right-aligned -->
+                <line class="line top"
+                      x1="15" y1="30"
+                      x2="90" y2="30"
+                />
+
+                <line class="line middle"
+                      x1="50" y1="50"
+                      x2="90" y2="50"
+                />
+
+                <line class="line bottom"
+                      x1="30" y1="70"
+                      x2="90" y2="70"
+                />
+
+            </svg>
+        </button>
+
+        <div class="menu" id="menu">
+            <a href="#">Cases</a>
+            <a href="#">Om mig</a>
+            <a href="#">Rejse</a>
+            <a href="#">Kontakt</a>
+        </div>
+    </div>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>CHRISTOFFER LÆTGAARD</h1>
+
+            <p>
+                Multimediedesignstuderende 3. Semester<br>
+                Passioneret omkring æstetisk web design med kreativ iteration
+            </p>
+
+        </div>
+    </section>
+</header>
+
+<main>
+    <section class="cases">
+
+        <h2 class="cases-title">Udvalgte <span>Cases</span></h2>
+
+        <div class="case-card">
+
+            <!-- LEFT: TEXT -->
+            <div class="case-text">
+
+                <p class="case-id">[01] Froggy</p>
+
+                <h3>1. Semester eksamen</h3>
+
+                <p>
+                    Opgaven var at finde på en bæredygtig løsning til børnefamilier.
+                </p>
+
+                <p>
+                    Løsningen blev at gamificere måder at spare CO₂,
+                    imens de sparede penge eller tid.
+                </p>
+
+            </div>
+
+            <!-- RIGHT: CAROUSEL -->
+            <div class="case-media">
+
+                <div class="case-carousel">
+
+                    <div class="slide active">
+                        <img src="images/billedefroggy.png" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/froggyprocess.png" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/bodilsgadebillede.png" alt="">
+                    </div>
+                </div>
+
+                <!-- NAV -->
+                <div class="case-nav">
+                    <div class="arrows">
+                        <button id="prev"><img src="images/prev1.png"></button>
+                        <button id="next"><img src="images/next1.png"></button>
+                    </div>
+                    <div class="see-all"><img src="images/sealt.png"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cases">
+        <div class="case">
+            <div class="case-title">
+                <h2>OM MIG</h2>
+            </div>
+            <div class="case-text">
+                <p>
+                    Jeg er multimediedesign studerende på 3 semester og det lyder jo meget fint, men udover det
+                    kører jeg mountainbike når solen skinner og skoven kalder. <br><br>
+
+                    Ellers kan jeg godt lide at være igang med et projekt som jeg kan fordybe mig i, jeg har blandt andet
+                    haft et hobbyfirma med sølv smykker som hed Hyge og et urmærke som hed Wolaet. <br><br>
+
+                    Jeg fisker også med min far og træner op til at kunne løfte alle mine mors og søster shopping poser.
+                </p>
+            </div>
+            <!-- LEFT -->
+            <div class="case-img1">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-labelledby="t">
+                    <image href="images/profil.png"
+                           width="200" height="200"
+                           preserveAspectRatio="xMidYMid slice"
+                           clip-path="url(#blobClip)"/>
+                    <clipPath id="blobClip">
+                        <path d="M43.1,-68.5C56.2,-58.6,67.5,-47.3,72.3,-33.9C77.2,-20.5,75.5,-4.9,74.2,11.3C72.9,27.6,71.9,44.5,63.8,57.2C55.7,69.8,40.6,78.2,25.5,79.2C10.4,80.1,-4.7,73.6,-20.9,69.6C-37.1,65.5,-54.5,63.9,-66,54.8C-77.5,45.8,-83.2,29.3,-85.7,12.3C-88.3,-4.8,-87.7,-22.3,-79.6,-34.8C-71.5,-47.3,-55.8,-54.9,-41.3,-64.2C-26.7,-73.6,-13.4,-84.7,0.8,-86C15,-87.2,29.9,-78.5,43.1,-68.5Z"
+                              transform="translate(100 100)"/>
+                    </clipPath>
+
+                    <path
+                            class="blob"
+                            d="M43.1,-68.5C56.2,-58.6,67.5,-47.3,72.3,-33.9C77.2,-20.5,75.5,-4.9,74.2,11.3C72.9,27.6,71.9,44.5,63.8,57.2C55.7,69.8,40.6,78.2,25.5,79.2C10.4,80.1,-4.7,73.6,-20.9,69.6C-37.1,65.5,-54.5,63.9,-66,54.8C-77.5,45.8,-83.2,29.3,-85.7,12.3C-88.3,-4.8,-87.7,-22.3,-79.6,-34.8C-71.5,-47.3,-55.8,-54.9,-41.3,-64.2C-26.7,-73.6,-13.4,-84.7,0.8,-86C15,-87.2,29.9,-78.5,43.1,-68.5Z"
+                            transform="translate(100 100)"
+                            fill="url(#imgFill)"
+                    />
+                    <path
+                            id="text"    d="M43.1,-68.5C56.2,-58.6,67.5,-47.3,72.3,-33.9C77.2,-20.5,75.5,-4.9,74.2,11.3C72.9,27.6,71.9,44.5,63.8,57.2C55.7,69.8,40.6,78.2,25.5,79.2C10.4,80.1,-4.7,73.6,-20.9,69.6C-37.1,65.5,-54.5,63.9,-66,54.8C-77.5,45.8,-83.2,29.3,-85.7,12.3C-88.3,-4.8,-87.7,-22.3,-79.6,-34.8C-71.5,-47.3,-55.8,-54.9,-41.3,-64.2C-26.7,-73.6,-13.4,-84.7,0.8,-86C15,-87.2,29.9,-78.5,43.1,-68.5Z"
+                            transform="translate(100 100)"
+                            fill="none" stroke="none"
+                            pathLength="100"
+                    />
+
+                    <text class="text-content">
+                        <textPath href="#text" startOffset="0%">❤ MADE WITH LOVE ❤ MADE WITH LOVE ❤ MADE WITH LOVE ❤ MADE WITH LOVE
+                            <animate attributeName="startOffset" from="0%" to="100%" dur="15s" repeatCount="indefinite" />
+                        </textPath>
+                        <textPath href="#text" startOffset="100%">❤ MADE WITH LOVE ❤ MADE WITH LOVE ❤ MADE WITH LOVE ❤ MADE WITH LOVE
+                            <animate attributeName="startOffset" from="-100%" to="0%" dur="15s" repeatCount="indefinite" />
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+
+</footer>
+
+</body>
+<script src="forside.js"></script>
+</html>
+
