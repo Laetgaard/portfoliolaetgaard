@@ -177,13 +177,11 @@ body{
     gap: 20px;
 }
 
-/* CAROUSEL */
 .case-carousel {
     position: relative;
     width: 100%;
-    height: 260px;
+    height: 400px; /* 🔥 større på desktop */
     overflow: hidden;
-    background: #555;
 }
 
 .slide {
@@ -208,6 +206,34 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* REMOVE ALL DEFAULT BUTTON STYLING */
+.arrows button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* IMAGE SIZE */
+.arrows button img {
+    display: block;
+    width: 45px; /* juster størrelse her */
+    height: auto;
+    transition: 0.2s ease;
+}
+
+/* Hover effect */
+.arrows button:hover img {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+/* Click effect */
+.arrows button:active img {
+    transform: scale(0.95);
 }
 
 svg{
@@ -374,21 +400,32 @@ span {
         align-items: center;
     }
 
-
-    /* ARROWS */
+    /* REMOVE ALL DEFAULT BUTTON STYLING */
     .arrows button {
         background: none;
-        border: 1px solid white;
-        color: white;
-        font-size: 22px;
-        padding: 5px 12px;
+        border: none;
+        padding: 0;
+        margin: 0;
         cursor: pointer;
-        transition: 0.2s;
     }
 
-    .arrows button:hover {
-        background: white;
-        color: #343434;
+    /* IMAGE SIZE */
+    .arrows button img {
+        display: block;
+        width: 45px; /* juster størrelse her */
+        height: auto;
+        transition: 0.2s ease;
+    }
+
+    /* Hover effect */
+    .arrows button:hover img {
+        opacity: 0.7;
+        transform: scale(1.05);
+    }
+
+    /* Click effect */
+    .arrows button:active img {
+        transform: scale(0.95);
     }
 
 
