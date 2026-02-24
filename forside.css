@@ -469,6 +469,11 @@ span {
             order: 1;
         }
 
+        /* First case-card: text above media on mobile */
+        .cases:first-of-type .case-text {
+            order: -1;
+        }
+
         .case-carousel {
             order: 2;
             height: 220px;
