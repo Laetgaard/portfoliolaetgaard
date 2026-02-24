@@ -156,7 +156,6 @@ body{
     gap: 15px;
 }
 
-}
 .case-id {
     opacity: 0.7;
     font-size: 14px;
@@ -487,47 +486,44 @@ span {
         }
     }
 
-    /* New: Desktop-only layout for the second .cases section
-       Result: .case-title above .case-text on the left, .case-img1 to the right.
-       Scoped with min-width so phone layout is untouched.
-    */
-    @media (min-width: 952px) {
-        .cases:nth-of-type(2) .case-card {
-            /* two columns: main text column + image column */
-            grid-template-columns: 1fr 360px;
-            grid-template-rows: auto 1fr;
-            grid-template-areas:
-                "title image"
-                "text image";
-            align-items: start;
-            gap: 30px;
-        }
+}
 
-        .cases:nth-of-type(2) .case-title {
-            grid-area: title;
-            /* ensure title uses left column width */
-            align-self: start;
-        }
+/* Desktop-only layout for the second .cases section
+   Result: .case-title above .case-text on the left, .case-img1 to the right.
+   Scoped with min-width so phone layout is untouched.
+*/
+@media (min-width: 952px) {
+    .cases:nth-of-type(2) .case-card {
+        grid-template-columns: 1fr 360px;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+            "title image"
+            "text image";
+        align-items: start;
+        gap: 30px;
+    }
 
-        .cases:nth-of-type(2) .case-text {
-            grid-area: text;
-            align-self: start;
-        }
+    .cases:nth-of-type(2) .case-title {
+        grid-area: title;
+        align-self: start;
+    }
 
-        .cases:nth-of-type(2) .case-img1 {
-            grid-area: image;
-            justify-self: flex-end;
-            align-self: start;
-            /* constrain image size to column */
-            max-width: 100%;
-        }
+    .cases:nth-of-type(2) .case-text {
+        grid-area: text;
+        align-self: start;
+    }
 
-        /* make sure SVG/image inside the .case-img1 scales nicely */
-        .cases:nth-of-type(2) .case-img1 svg,
-        .cases:nth-of-type(2) .case-img1 img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+    .cases:nth-of-type(2) .case-img1 {
+        grid-area: image;
+        justify-self: flex-end;
+        align-self: start;
+        max-width: 100%;
+    }
+
+    .cases:nth-of-type(2) .case-img1 svg,
+    .cases:nth-of-type(2) .case-img1 img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 }
