@@ -5,6 +5,7 @@ btn.addEventListener('click', () => {
 });
 
 const slides = document.querySelectorAll(".slide");
+const track = document.querySelector(".slides-track");
 const nextBtn = document.getElementById("next");
 const prevBtn = document.getElementById("prev");
 
@@ -12,12 +13,8 @@ let index = 0;
 
 
 function showSlide(i) {
-
-    slides.forEach(slide => {
-        slide.classList.remove("active");
-    });
-
-    slides[i].classList.add("active");
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    track.style.transform = `translateX(-${i * slideWidth}px)`;
 }
 
 
