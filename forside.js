@@ -13,8 +13,7 @@ let index = 0;
 
 
 function showSlide(i) {
-    const slideWidth = slides[0].getBoundingClientRect().width;
-    track.style.transform = `translateX(-${i * slideWidth}px)`;
+    track.style.transform = `translateX(-${slides[i].offsetLeft}px)`;
 }
 
 
