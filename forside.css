@@ -180,19 +180,22 @@ body{
 .case-carousel {
     position: relative;
     width: 100%;
-    height: 400px; /* 🔥 større på desktop */
+    height: 300px;
     overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, black 65%, transparent 100%);
+    mask-image: linear-gradient(to right, black 65%, transparent 100%);
+}
+
+.slides-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.4s ease;
 }
 
 .slide {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-.slide.active {
-    opacity: 1;
+    min-width: 66.67%;
+    flex-shrink: 0;
+    position: relative;
 }
 
 .slide img {
@@ -206,6 +209,12 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 10px;
+}
+
+.arrows {
+    display: flex;
+    gap: 15px;
 }
 
 /* REMOVE ALL DEFAULT BUTTON STYLING */
@@ -513,30 +522,8 @@ span {
 
     /* CAROUSEL */
     .case-carousel {
-        position: relative;
-        width: 100%;
         height: 260px;
-        overflow: hidden;
-        background: #555;
     }
-
-    .slide {
-        position: absolute;
-        inset: 0;
-        opacity: 0;
-        transition: opacity 0.4s ease;
-    }
-
-    .slide.active {
-        opacity: 1;
-    }
-
-    .slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
 
     /* NAV */
     .case-nav {
@@ -648,6 +635,12 @@ span {
         .case-carousel {
             order: 2;
             height: 220px;
+            -webkit-mask-image: none;
+            mask-image: none;
+        }
+
+        .slide {
+            min-width: 100%;
         }
 
         .case-nav {
