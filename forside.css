@@ -263,6 +263,151 @@ svg{
     transition: ease fill .5s;
 }
 
+/* ================= TIMELINE SECTION ================= */
+
+.timeline {
+    padding: 80px 6%;
+    background: #111;
+}
+
+.timeline-title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+.timeline-title em {
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.timeline-track {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.timeline-track::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 40px;
+    right: 40px;
+    height: 2px;
+    background: #717171;
+    z-index: 0;
+}
+
+.timeline-point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    text-align: center;
+}
+
+.timeline-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid #717171;
+    margin-bottom: 16px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.timeline-point:hover .timeline-dot {
+    transform: scale(1.3);
+    background: #717171;
+    border-color: white;
+}
+
+.timeline-label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.timeline-desc {
+    font-size: 14px;
+    opacity: 0.7;
+    max-width: 140px;
+}
+
+/* ================= FOOTER ================= */
+
+.site-footer {
+    background: #343434;
+    padding: 60px 6% 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-brand .footer-name {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.footer-brand .footer-tagline {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    opacity: 0.9;
+}
+
+.footer-links a,
+.footer-contact a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    opacity: 1;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    opacity: 0.5;
+}
+
 /*Dev*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700");
 #dev {
@@ -443,6 +588,32 @@ span {
 
 
     /* ========================= */
+    /* TIMELINE – TABLET */
+    /* ========================= */
+
+    .timeline {
+        padding: 60px 6%;
+    }
+
+    .timeline-title {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    /* ========================= */
+    /* FOOTER – TABLET */
+    /* ========================= */
+
+    .footer-inner {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .footer-brand {
+        flex-basis: 100%;
+    }
+
+    /* ========================= */
     /* 📱 MOBILE VERSION */
     /* ========================= */
 
@@ -488,6 +659,66 @@ span {
         /* Remove See All */
         .see-all {
             display: none;
+        }
+
+        /* ========================= */
+        /* TIMELINE – MOBILE */
+        /* ========================= */
+
+        .timeline {
+            padding: 50px 5%;
+        }
+
+        .timeline-track {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 0 0 30px;
+            gap: 40px;
+        }
+
+        .timeline-track::before {
+            top: 0;
+            bottom: 0;
+            left: 37px;
+            right: auto;
+            width: 2px;
+            height: auto;
+        }
+
+        .timeline-point {
+            flex-direction: row;
+            align-items: center;
+            text-align: left;
+            gap: 20px;
+        }
+
+        .timeline-dot {
+            margin-bottom: 0;
+            flex-shrink: 0;
+        }
+
+        .timeline-label {
+            font-size: 16px;
+        }
+
+        .timeline-desc {
+            max-width: none;
+        }
+
+        /* ========================= */
+        /* FOOTER – MOBILE */
+        /* ========================= */
+
+        .footer-inner {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+        }
+
+        .footer-links,
+        .footer-contact {
+            align-items: center;
         }
     }
 
