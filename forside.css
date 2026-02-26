@@ -609,6 +609,18 @@ span {
     }
 
     /* ========================= */
+    /* OM MIG – TABLET (stacked: title → image → text) */
+    /* ========================= */
+
+    .cases:nth-of-type(2) .case-card {
+        grid-template-columns: 1fr;
+    }
+
+    .cases:nth-of-type(2) .case-text {
+        order: 1;
+    }
+
+    /* ========================= */
     /* 📱 MOBILE VERSION */
     /* ========================= */
 
