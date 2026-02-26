@@ -149,6 +149,10 @@ body{
     gap: 40px;
 }
 
+.case-card + .case-card {
+    margin-top: 40px;
+}
+
 /* TEXT */
 .case-text {
     display: flex;
