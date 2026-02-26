@@ -731,11 +731,11 @@ span {
 */
 @media (min-width: 952px) {
     .cases:nth-of-type(2) .case-card {
-        grid-template-columns: 1fr 360px;
+        grid-template-columns: 360px 1fr;
         grid-template-rows: auto 1fr;
         grid-template-areas:
-            "title image"
-            "text image";
+            "image title"
+            "image text";
         align-items: start;
         gap: 30px;
     }
@@ -752,7 +752,7 @@ span {
 
     .cases:nth-of-type(2) .case-img1 {
         grid-area: image;
-        justify-self: flex-end;
+        justify-self: start;
         align-self: start;
         max-width: 100%;
     }
