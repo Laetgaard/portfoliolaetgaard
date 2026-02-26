@@ -4,7 +4,6 @@ body{
     font-family: "Instrument Serif", serif;
 }
 
-
 .burger {
     background: none;
     border: none;
@@ -447,7 +446,6 @@ span {
         transform: scale(1.2);
     }
 }
-
 
 @media (max-width: 950px) {
 
