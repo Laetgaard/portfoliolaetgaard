@@ -17,6 +17,34 @@ body{
     height: 60px;
 }
 
+.btn-case1{
+    position: absolute;
+    left: 40px;    /* matches the .case-card padding */
+    bottom: 40px;  /* matches the .case-card padding */
+    z-index: 5;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ededed;
+    background: #252525;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+}
+.btn-case1:hover{
+    position: absolute;
+    left: 40px;    /* matches the .case-card padding */
+    bottom: 40px;  /* matches the .case-card padding */
+    z-index: 5;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    background: #787878;
+    font-weight: bold;
+
+}
+
 .line {
     stroke: #ffffff;
     stroke-width: 4px;
@@ -141,6 +169,7 @@ body{
 
 /* CARD */
 .case-card {
+    position: relative;
     background: #717171;
     padding: 40px;
     display: grid;
@@ -494,7 +523,11 @@ span {
         grid-template-columns: 1fr 1.2fr;
         gap: 40px;
     }
-
+    .btn-case1{
+        position: static;
+        margin-bottom: 5px;
+        align-self: flex-start;
+    }
 
     /* TEXT */
     .case-text {
