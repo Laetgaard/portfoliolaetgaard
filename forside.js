@@ -1,9 +1,4 @@
-const btn = document.querySelector('.burger');
-
-btn.addEventListener('click', () => {
-    btn.classList.toggle('active');
-});
-
+console.log("JS connected");
 document.querySelectorAll(".case-card").forEach((card) => {
     const track = card.querySelector(".slides-track");
     const slides = card.querySelectorAll(".slide");
@@ -30,3 +25,14 @@ document.querySelectorAll(".case-card").forEach((card) => {
         showSlide(index);
     });
 });
+
+const burger = document.getElementById('burger');
+const menu = document.getElementById('menu');
+
+if (burger && menu) {
+    burger.addEventListener('click', () => {
+        console.log("burger clicked");
+        burger.classList.toggle('active');
+        menu.classList.toggle('open');
+    });
+}
