@@ -26,13 +26,4 @@ document.querySelectorAll(".case-card").forEach((card) => {
     });
 });
 
-const burger = document.getElementById('burger');
-const menu = document.getElementById('menu');
 
-if (burger && menu) {
-    burger.addEventListener('click', () => {
-        console.log("burger clicked");
-        burger.classList.toggle('active');
-        menu.classList.toggle('open');
-    });
-}
