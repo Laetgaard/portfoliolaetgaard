@@ -121,8 +121,8 @@ body{
     position: absolute;
     inset: 0;
 
-    background: rgba(0, 0, 0, 0.25); /* darkness level */
-
+    background: rgba(0, 0, 0, 0.10); /* darkness level */
+    transition: background 0.3s ease;
     z-index: 1;
 }
 
@@ -133,6 +133,10 @@ body{
     left: 3rem;
     bottom: 3rem;
 
+    z-index: 2;
+}
+
+.nav{
     z-index: 2;
 }
 
